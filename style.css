@@ -1,0 +1,56 @@
+body,.card,#username,.modal-body,.modal-header{
+    background: #f0f4f7;
+}
+.card,#searchForm{
+    border-radius: 5px;
+background: #f0f4f7;
+box-shadow:  1px 1px 1px #b7bbbe,
+     -3px -3px 5px #ffffff;
+}
+#searchForm{
+    border-radius: 10px;
+    background: black;
+    width: 30%;margin: auto
+}
+footer {
+position: relative;
+height: 100px;
+width: 100%;
+
+}
+
+p.copyright {
+position: absolute;
+width: 100%;
+color: gray;
+line-height: 40px;
+font-size: 0.7em;
+text-align: center;
+bottom:0;
+}
+#basic-text1{
+background: black;
+color:#f0f4f7;
+cursor: pointer;
+border: none;
+}
+#navDark{
+background: black;
+margin-bottom: 60px;
+ 
+}
+#navDark a{
+color:white;
+margin-left: 40px;
+}
+body.modal-open .supreme-container{
+-webkit-filter: blur(3px);
+-moz-filter: blur(3px);
+-o-filter: blur(3px);
+-ms-filter: blur(3px);
+filter: blur(3px);
+}
+.footer{
+    bottom: 0px;
+    position:absolute;
+}
