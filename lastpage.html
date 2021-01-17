@@ -3,64 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GitHub</title>
+    <title>Document</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="./lastpage.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--start-->
 </head>
 <body onload="load()">
+
 <div class="supreme-container">
-  <!--start nav bar-->
-<nav class="navbar" id="navDark">
-  <a class="navbar-brand" href="#" >GitHub</a>
+	<nav class="navbar" id="navDark">
+  <a class="navbar-brand" href="#" >
+    GitHub .
+  </a>
 </nav>
-<!--end of nav bar-->
-<!-- search erea-->
+
+   
+
+
 <div class="input-group md-form form-sm form-2 pl-0 " id="searchForm" >
   <input class="form-control my-0 py-1 red-border" type="text"  placeholder="Username..." aria-label="Search" id="username"  >
   <div class="input-group-append" style="padding: 10px" data-toggle="modal" data-target="#exampleModal" >
     <span class="input-group-text red lighten-3" id="basic-text1"  onclick="search()"><i class="fas fa-search text-grey"
         aria-hidden="true"></i></span>
   </div>
-  <!--end of search erea-->
-  <!-- start of profiles -->
-    
 </div>
+
+		
+
 <div class="card-deck" style="width: 70%;margin: auto;text-align: center;">
-  <!--
-  <div  style="width:100%;text-align: start;margin: 60px 0 20px 10px ;"><h4 style="font-weight: bold;">GitHub Profiles</h4></div>
+	<div  style="width:100%;text-align: start;margin: 60px 0 20px 10px ;"><h4 style="font-weight: bold;">GitHub Profiles</h4></div>
   <div class="card">
     <img class="card-img-top" src="#" id="src0" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" id="name0">person0</h5>
+      <h5 class="card-title" id="name0">Name0</h5>
     </div>
   </div>
   <div class="card">
     <img class="card-img-top" src="#" id="src1"alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" id="name1">person1</h5>
+      <h5 class="card-title" id="name1">Name1</h5>
     </div>
   </div>
   <div class="card">
     <img class="card-img-top" src="#" id="src2" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" id="name2">person2</h5>
+      <h5 class="card-title" id="name2">Name2</h5>
     </div>
   </div>
   <div class="card">
     <img class="card-img-top" src="#" id="src3" alt="Card image cap">
     <div class="card-body">
-      <h5 class="card-title" id="name3">person3</h5>
+      <h5 class="card-title" id="name3">Name3</h5>
     </div>
   </div>
--->
 </div>
-<!--end of profiles-->
-<script src="./app.js"></script>  
+
+
+
+<footer>
+    <p class="copyright">copyright 2020/2021</p>
+</footer>
+
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background: none;border: none;">
+      <div class="modal-header" style=" border-radius: 20px 20px 0 0;">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+    <img class="card-img-top" src="404.jpg" id="imgProfil" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;" id="nameProfil">Profile not found ! </h5>
+      <div style="font-size: 20px">
+      	<label style="margin-right: 204px">Followers : <span id="followers">00</span></label>
+       <label>Repos : <span id="repos">00</span></label>
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="modal-footer" style="border-radius: 0 0 20px 20px;background: black">
+        <button type="button" class="btn btn-secondary" style="width: 100%;background: none;border:none" ><a href="#"  id="link" style="color:white;">PROFILE</a> </button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./lastpage.js"></script>   
 </body>
 </html>
